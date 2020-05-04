@@ -1,0 +1,153 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        border: 0;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        height: 100vh;
+        background-image: url("/images/bg-desktop.svg");
+        background-color: hsl(257, 40%, 49%);
+        font-family: 'Poppins', sans-serif;
+        color: rgb(230, 228, 228);
+    }
+    
+    section .container {
+        display: flex;
+    }
+    
+    section .container img {
+        width: 15%;
+        margin-left: 100px;
+        margin-top: 70px;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    main .container img {
+        margin-left: 100px;
+        margin-top: 70px;
+        width: 80%;
+    }
+    
+    .text {
+        margin-left: 30px;
+    }
+    
+    main h2 {
+        font-size: 3.6rem;
+        width: 80%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    
+    main p {
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    
+    .button {
+        display: inline-block;
+        font-size: 1.6rem;
+        color: hsl(257, 40%, 49%);
+        background-color: white;
+        margin: 15px 0px 0px;
+        padding: 10px 55px;
+        text-decoration: none;
+        border-radius: 40px;
+        box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
+    }
+    
+    .icons {
+        display: flex;
+        float: right;
+        margin-right: 100px;
+    }
+    
+    .fb,
+    .tw,
+    .ig {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    i {
+        font-size: 2.0rem;
+        cursor: pointer;
+    }
+    
+    @media(max-width: 375px) {
+        body {
+            background-image: url('/images/bg-mobile.svg');
+        }
+        section .container {
+            display: flex;
+        }
+        section .container img {
+            width: 40%;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+        main {
+            display: inline-block;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        main .container img {
+            width: 70%;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        .text {
+            display: inline-block;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 1.8rem;
+            width: 90%;
+            margin-bottom: 15px;
+            margin-top: 50px;
+            margin-right: 0px;
+        }
+        main p {
+            font-size: 1.4rem;
+            width: 90%;
+        }
+        .button {
+            display: inline-block;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 15px 0px 0px;
+            padding: 7px 60px;
+            margin-right: 35px;
+        }
+        .icons {
+            display: flex;
+            float: right;
+            margin-right: 100px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+    }
